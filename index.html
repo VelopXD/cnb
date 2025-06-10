@@ -12,6 +12,11 @@
     <header class="hero">
         <nav class="navbar">
             <div class="logo">CNB Team</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="pages/about.html">About Us</a>
@@ -19,13 +24,13 @@
                 <a href="pages/news.html">News</a>
                 <a href="pages/join.html">Join CNB</a>
                 <a href="pages/contact.html">Contact</a>
-                <a href="https://discord.gg/cnbteam" class="btn btn-discord">Join Discord</a>
+                <a href="https://discord.gg/xDWHDrFqtb" class="btn btn-discord">Join Discord</a>
             </div>
         </nav>
         <div class="hero-content">
             <h1 class="animated-heading">CNB Team - UHC & Sword Masters</h1>
             <div class="cta-buttons">
-                <a href="https://discord.gg/cnbteam" class="btn btn-primary">Join Discord</a>
+                <a href="https://discord.gg/xDWHDrFqtb" class="btn btn-primary">Join Discord</a>
             </div>
         </div>
     </header>
@@ -173,5 +178,24 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/carousel.js"></script>
+    <div class="watermark">Made by VelopXD</div>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
