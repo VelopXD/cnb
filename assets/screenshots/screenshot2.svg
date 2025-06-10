@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1a1a1a"/>
+    
+    <!-- Arena Scene -->
+    <g transform="translate(600 337.5)">
+        <!-- Arena Platform -->
+        <path d="M-400 50 L400 50 L500 150 L-500 150 Z" 
+              fill="#2a2a2a" stroke="#3a3a3a" stroke-width="2"/>
+        
+        <!-- Arena Decorations -->
+        <g transform="translate(-300 100)">
+            <path d="M-20 0 L20 0 L0 -40 Z" fill="#3a0ca3"/>
+        </g>
+        <g transform="translate(300 100)">
+            <path d="M-20 0 L20 0 L0 -40 Z" fill="#3a0ca3"/>
+        </g>
+        
+        <!-- Duel Scene -->
+        <!-- Player 1 -->
+        <g transform="translate(-100 0)">
+            <rect x="-20" y="-40" width="40" height="60" fill="#7b2cbf"/>
+            <rect x="-15" y="20" width="30" height="40" fill="#3a0ca3"/>
+            <!-- Sword -->
+            <path d="M25 -20 L55 -30 L60 -25 L30 -15" 
+                  fill="#f72585" stroke="#ffffff" stroke-width="1">
+                <animate attributeName="opacity" values="1;0.7;1" dur="0.5s" repeatCount="indefinite"/>
+            </path>
+        </g>
+        
+        <!-- Player 2 -->
+        <g transform="translate(100 0)">
+            <rect x="-20" y="-40" width="40" height="60" fill="#3a0ca3"/>
+            <rect x="-15" y="20" width="30" height="40" fill="#7b2cbf"/>
+            <!-- Sword -->
+            <path d="M-25 -20 L-55 -30 L-60 -25 L-30 -15" 
+                  fill="#f72585" stroke="#ffffff" stroke-width="1">
+                <animate attributeName="opacity" values="1;0.7;1" dur="0.5s" repeatCount="indefinite"/>
+            </path>
+        </g>
+        
+        <!-- Combat Effects -->
+        <g transform="translate(0 -20)">
+            <!-- Clash Effect -->
+            <path d="M-10 0 L10 0 M0 -10 L0 10" 
+                  stroke="#f72585" stroke-width="4" opacity="0.8">
+                <animate attributeName="opacity" values="0.8;0.2;0.8" dur="0.3s" repeatCount="indefinite"/>
+            </path>
+            <!-- Energy Rings -->
+            <circle cx="0" cy="0" r="20" fill="none" stroke="#f72585" stroke-width="2" opacity="0.5">
+                <animate attributeName="r" values="20;40;20" dur="1s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.5;0;0.5" dur="1s" repeatCount="indefinite"/>
+            </circle>
+        </g>
+    </g>
+    
+    <!-- HUD Elements -->
+    <!-- Health Bars -->
+    <g transform="translate(100 50)">
+        <rect x="0" y="0" width="200" height="20" fill="#2a2a2a"/>
+        <rect x="0" y="0" width="150" height="20" fill="#f72585">
+            <animate attributeName="width" values="150;140;150" dur="0.5s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+    <g transform="translate(900 50)">
+        <rect x="0" y="0" width="200" height="20" fill="#2a2a2a"/>
+        <rect x="0" y="0" width="180" height="20" fill="#f72585">
+            <animate attributeName="width" values="180;170;180" dur="0.5s" repeatCount="indefinite"/>
+        </rect>
+    </g>
+    
+    <!-- Overlay Text -->
+    <text x="600" y="100" 
+          font-family="Arial, sans-serif" 
+          font-size="48" 
+          fill="#ffffff" 
+          text-anchor="middle">
+        Sword Mode Duel
+    </text>
+    
+    <!-- Combat Timer -->
+    <text x="600" y="50" 
+          font-family="Arial, sans-serif" 
+          font-size="36" 
+          fill="#f72585" 
+          text-anchor="middle">
+        2:45
+    </text>
+    
+    <!-- Particles -->
+    <g>
+        <circle cx="300" cy="200" r="2" fill="#f72585">
+            <animate attributeName="cy" values="200;180;200" dur="1.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="900" cy="300" r="2" fill="#7b2cbf">
+            <animate attributeName="cy" values="300;280;300" dur="1.7s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="600" cy="500" r="2" fill="#3a0ca3">
+            <animate attributeName="cy" values="500;480;500" dur="1.9s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>

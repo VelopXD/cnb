@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1a1a1a"/>
+    
+    <!-- Tournament Arena -->
+    <g transform="translate(600 337.5)">
+        <!-- Arena Platform -->
+        <path d="M-550 50 C-450 30 450 30 550 50 L600 337.5 L-600 337.5 Z" 
+              fill="#2a2a2a" stroke="#3a3a3a" stroke-width="2"/>
+        
+        <!-- Arena Decorations -->
+        <!-- Pillars -->
+        <g transform="translate(-400 0)">
+            <rect x="-20" y="-100" width="40" height="150" fill="#3a0ca3"/>
+            <path d="M-25 -110 L25 -110 L15 -130 L-15 -130 Z" fill="#7b2cbf"/>
+            <!-- Flame Animation -->
+            <path d="M-10 -140 Q0 -160 10 -140" fill="#f72585">
+                <animate attributeName="d" 
+                         values="M-10 -140 Q0 -160 10 -140;M-10 -140 Q0 -170 10 -140;M-10 -140 Q0 -160 10 -140" 
+                         dur="1s" repeatCount="indefinite"/>
+            </path>
+        </g>
+        <g transform="translate(400 0)">
+            <rect x="-20" y="-100" width="40" height="150" fill="#3a0ca3"/>
+            <path d="M-25 -110 L25 -110 L15 -130 L-15 -130 Z" fill="#7b2cbf"/>
+            <!-- Flame Animation -->
+            <path d="M-10 -140 Q0 -160 10 -140" fill="#f72585">
+                <animate attributeName="d" 
+                         values="M-10 -140 Q0 -160 10 -140;M-10 -140 Q0 -170 10 -140;M-10 -140 Q0 -160 10 -140" 
+                         dur="1s" repeatCount="indefinite"/>
+            </path>
+        </g>
+        
+        <!-- Final Duel Scene -->
+        <!-- Player 1 - Tournament Finalist -->
+        <g transform="translate(-100 0)">
+            <rect x="-20" y="-40" width="40" height="60" fill="#7b2cbf"/>
+            <rect x="-15" y="20" width="30" height="40" fill="#3a0ca3"/>
+            <!-- Diamond Sword -->
+            <path d="M25 -20 L55 -30 L60 -25 L30 -15" 
+                  fill="#f72585" stroke="#ffffff" stroke-width="2">
+                <animate attributeName="opacity" values="1;0.7;1" dur="0.5s" repeatCount="indefinite"/>
+            </path>
+            <!-- Energy Aura -->
+            <circle cx="0" cy="0" r="30" fill="none" stroke="#f72585" stroke-width="2" opacity="0.5">
+                <animate attributeName="r" values="30;40;30" dur="1s" repeatCount="indefinite"/>
+            </circle>
+        </g>
+        
+        <!-- Player 2 - Tournament Finalist -->
+        <g transform="translate(100 0)">
+            <rect x="-20" y="-40" width="40" height="60" fill="#3a0ca3"/>
+            <rect x="-15" y="20" width="30" height="40" fill="#7b2cbf"/>
+            <!-- Diamond Sword -->
+            <path d="M-25 -20 L-55 -30 L-60 -25 L-30 -15" 
+                  fill="#f72585" stroke="#ffffff" stroke-width="2">
+                <animate attributeName="opacity" values="1;0.7;1" dur="0.5s" repeatCount="indefinite"/>
+            </path>
+            <!-- Energy Aura -->
+            <circle cx="0" cy="0" r="30" fill="none" stroke="#f72585" stroke-width="2" opacity="0.5">
+                <animate attributeName="r" values="30;40;30" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+        </g>
+    </g>
+    
+    <!-- Tournament UI Elements -->
+    <!-- Tournament Bracket -->
+    <g transform="translate(100 50)">
+        <text font-family="Arial, sans-serif" 
+              font-size="24" 
+              fill="#ffffff">
+            FINALS
+        </text>
+        <line x1="0" y1="40" x2="100" y2="40" 
+              stroke="#f72585" stroke-width="2"/>
+    </g>
+    <g transform="translate(900 50)">
+        <text font-family="Arial, sans-serif" 
+              font-size="24" 
+              fill="#ffffff" 
+              text-anchor="end">
+            FINALS
+        </text>
+        <line x1="0" y1="40" x2="-100" y2="40" 
+              stroke="#f72585" stroke-width="2"/>
+    </g>
+    
+    <!-- Tournament Timer -->
+    <g transform="translate(600 50)">
+        <text font-family="Arial, sans-serif" 
+              font-size="36" 
+              fill="#f72585" 
+              text-anchor="middle">
+            FINAL ROUND
+        </text>
+        <text y="40"
+              font-family="Arial, sans-serif" 
+              font-size="24" 
+              fill="#ffffff" 
+              text-anchor="middle">
+            1:30
+        </text>
+    </g>
+    
+    <!-- Particle Effects -->
+    <g>
+        <!-- Tournament Energy -->
+        <circle cx="300" cy="200" r="3" fill="#f72585">
+            <animate attributeName="cy" values="200;150;200" dur="2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="900" cy="300" r="3" fill="#7b2cbf">
+            <animate attributeName="cy" values="300;250;300" dur="1.8s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0;1" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="600" cy="400" r="3" fill="#3a0ca3">
+            <animate attributeName="cy" values="400;350;400" dur="2.2s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="1;0;1" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+    
+    <!-- Title Overlay -->
+    <text x="600" y="600" 
+          font-family="Arial, sans-serif" 
+          font-size="48" 
+          fill="#ffffff" 
+          text-anchor="middle">
+        Tournament Finals
+    </text>
+</svg>

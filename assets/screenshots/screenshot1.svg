@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+    <!-- Background -->
+    <rect width="1200" height="675" fill="#1a1a1a"/>
+    
+    <!-- UHC Battle Scene -->
+    <g transform="translate(600 337.5)">
+        <!-- Terrain -->
+        <path d="M-600 100 Q0 150 600 100 L600 337.5 L-600 337.5 Z" 
+              fill="#2a2a2a" stroke="#3a3a3a" stroke-width="2"/>
+        
+        <!-- Players -->
+        <!-- Player 1 -->
+        <g transform="translate(-200 50)">
+            <rect x="-20" y="-40" width="40" height="60" fill="#7b2cbf"/>
+            <rect x="-15" y="20" width="30" height="40" fill="#3a0ca3"/>
+            <!-- Sword -->
+            <path d="M25 -20 L45 -30 L50 -25 L40 -5" fill="#f72585"/>
+        </g>
+        
+        <!-- Player 2 -->
+        <g transform="translate(200 0)">
+            <rect x="-20" y="-40" width="40" height="60" fill="#3a0ca3"/>
+            <rect x="-15" y="20" width="30" height="40" fill="#7b2cbf"/>
+            <!-- Bow -->
+            <path d="M-30 -20 Q-40 -30 -45 -20 Q-40 -10 -30 -20" 
+                  fill="none" stroke="#f72585" stroke-width="3"/>
+        </g>
+        
+        <!-- Effects -->
+        <circle cx="-180" cy="30" r="5" fill="#f72585" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="220" cy="-20" r="5" fill="#f72585" opacity="0.8">
+            <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.2s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+    
+    <!-- Overlay Text -->
+    <text x="600" y="100" 
+          font-family="Arial, sans-serif" 
+          font-size="48" 
+          fill="#ffffff" 
+          text-anchor="middle">
+        UHC Battle
+    </text>
+    
+    <!-- Particles -->
+    <g>
+        <circle cx="200" cy="200" r="2" fill="#f72585">
+            <animate attributeName="cy" values="200;180;200" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1000" cy="300" r="2" fill="#7b2cbf">
+            <animate attributeName="cy" values="300;280;300" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="600" cy="400" r="2" fill="#3a0ca3">
+            <animate attributeName="cy" values="400;380;400" dur="2.2s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+</svg>

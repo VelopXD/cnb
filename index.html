@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNB Team - UHC & Sword Masters</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">CNB Team</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="pages/about.html">About Us</a>
+                <a href="pages/team.html">Team</a>
+                <a href="pages/news.html">News</a>
+                <a href="pages/join.html">Join CNB</a>
+                <a href="pages/contact.html">Contact</a>
+                <a href="https://discord.gg/cnbteam" class="btn btn-discord">Join Discord</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 class="animated-heading">CNB Team - UHC & Sword Masters</h1>
+            <div class="cta-buttons">
+                <a href="https://discord.gg/cnbteam" class="btn btn-primary">Join Discord</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Founders Section -->
+    <section id="founders" class="founders-section">
+        <h2>Meet Our Founders</h2>
+        <div class="founders-grid">
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="assets/founders/aditya.jpg" alt="Aditya">
+                </div>
+                <h3>Aditya</h3>
+                <p>Team Leader & UHC Expert</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="assets/founders/jonscena.jpg" alt="Jonscena">
+                </div>
+                <h3>Jonscena</h3>
+                <p>Strategy Director & Community Lead</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="founder-card">
+                <div class="founder-img">
+                    <img src="assets/founders/dinto.jpg" alt="Dinto">
+                </div>
+                <h3>Dinto</h3>
+                <p>Tournament Director & Sword Master</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gamemodes Section -->
+    <section id="gamemodes" class="gamemodes-section">
+        <h2>Our Gamemodes</h2>
+        <div class="gamemode-container">
+            <div class="gamemode-card uhc">
+                <h3>UHC Mode</h3>
+                <div class="gamemode-content">
+                    <div class="gamemode-info">
+                        <h4>Ultimate Hardcore Experience</h4>
+                        <ul>
+                            <li>No Natural Regeneration</li>
+                            <li>Custom Scenarios</li>
+                            <li>Team & Solo Matches</li>
+                            <li>Weekly Tournaments</li>
+                        </ul>
+                        <a href="pages/uhc.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gamemode-card sword">
+                <h3>Sword Mode</h3>
+                <div class="gamemode-content">
+                    <div class="gamemode-info">
+                        <h4>Master the Blade</h4>
+                        <ul>
+                            <li>Custom Sword Mechanics</li>
+                            <li>Skill-based Combat</li>
+                            <li>Unique Abilities</li>
+                            <li>Ranked Matches</li>
+                        </ul>
+                        <a href="pages/sword.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Media Gallery -->
+    <section id="media" class="media-section">
+        <h2>Media Gallery</h2>
+        <div class="media-container">
+            <div class="screenshots-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <!-- Images will be added via JavaScript -->
+                    </div>
+                    <button class="carousel-button prev">&lt;</button>
+                    <button class="carousel-button next">&gt;</button>
+                </div>
+            </div>
+            <div class="video-embeds">
+                <div class="youtube-container">
+                    <h3>Latest Videos</h3>
+                    <div id="youtubePlayer"></div>
+                </div>
+                <div class="twitch-container">
+                    <h3>Live Streams</h3>
+                    <div id="twitchPlayer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="https://discord.gg/cnbteam">Discord</a>
+                <a href="https://twitter.com/cnbteam">Twitter</a>
+                <a href="https://github.com/cnbteam">GitHub</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CNB Team. All rights reserved.</p>
+            <a href="https://github.com/cnbteam/website" class="github-link">View on GitHub</a>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
